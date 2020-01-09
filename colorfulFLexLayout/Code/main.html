@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Colorful Flex Layout</title>
+        <link rel="stylesheet" href="./main.css" />
+    </head>
+    <body>
+        <header>
+            <h1>Responsive Css Colorful Flex Grid</h1>
+            <div class="options">
+                <div id="axis">
+                    <input
+                        type="radio"
+                        name="axis"
+                        id="show-axis"
+                        value="showaxis"
+                    />Show Axis
+                    <input
+                        type="radio"
+                        name="axis"
+                        id="no-axis"
+                        value="noaxis"
+                        checked
+                    />No Axis
+                </div>
+                <div id="flexDir">
+                    Flex Direction:
+                    <select id="flex-direction">
+                        <option value="row" selected>Row</option>
+                        <option value="column">Column</option>
+                        <option value="row-reverse">Row Reverse</option>
+                        <option value="column-reverse">Column Reverse</option>
+                    </select>
+                </div>
+            </div>
+        </header>
+        <div class="container">
+            <div class="mainAxis arrow hide">
+                <div class="arrowtext">Main-axis</div>
+                <img
+                    src="./arrow1.png"
+                    alt="arrowImage"
+                    width="750px"
+                    height="100px"
+                />
+            </div>
+            <div class="crossAxis arrow hide">
+                <div class="arrowtext">Cross-axis</div>
+                <img
+                    src="./arrow2.png"
+                    alt="arrowImage"
+                    height="750px"
+                    width="100px"
+                />
+            </div>
+
+            <div class="row">
+                <div class="column">
+                    <div id="item"></div>
+                    <div id="item"></div>
+                    <div id="item"></div>
+                    <div id="item"></div>
+                    <div id="item"></div>
+                </div>
+                <div class="column">
+                    <div id="item"></div>
+                    <div id="item"></div>
+                    <div id="item"></div>
+                    <div id="item"></div>
+                    <div id="item"></div>
+                </div>
+                <div class="column">
+                    <div id="item"></div>
+                    <div id="item"></div>
+                    <div id="item"></div>
+                    <div id="item"></div>
+                    <div id="item"></div>
+                </div>
+                <div class="column">
+                    <div id="item"></div>
+                    <div id="item"></div>
+                    <div id="item"></div>
+                    <div id="item"></div>
+                    <div id="item"></div>
+                </div>
+            </div>
+        </div>
+
+        <script src="./main.js"></script>
+    </body>
+</html>
