@@ -1,0 +1,110 @@
+html,
+body {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+}
+
+.options {
+    display: flex;
+    justify-content: space-around;
+}
+
+header {
+    text-align: center;
+}
+
+.container {
+    width: auto;
+}
+.mainAxis,
+.crossAxis {
+    position: relative;
+    z-index: 1;
+    width: fit-content;
+}
+
+.mainAxis {
+    top: 27rem;
+    left: 20rem;
+}
+
+.crossAxis {
+    left: 50rem;
+    top: 0rem;
+}
+
+.crossAxis .arrowtext {
+    transform: rotate(90deg);
+    top: 4rem;
+}
+
+.arrowtext {
+    position: absolute;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.hide {
+    display: none;
+}
+
+.adjust {
+    top: -92vh;
+}
+
+.row {
+    display: flex;
+    margin: 2%;
+    flex-wrap: wrap;
+    position: relative;
+    left: 0;
+}
+
+.column {
+    flex: 20%;
+}
+
+#item {
+    border-radius: 5px;
+    border: 0.5px solid black;
+    margin: 10px;
+    height: 300px;
+}
+
+@media all and (max-width: 800px) {
+    .column {
+        flex: 50%;
+    }
+
+    .mainAxis {
+        top: 10rem;
+        left: 5rem;
+    }
+
+    .crossAxis {
+        left: 20rem;
+        top: 0rem;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .column {
+        flex: 100%;
+    }
+
+    .mainAxis {
+        top: 10rem;
+        left: 5rem;
+    }
+
+    .crossAxis {
+        left: 20rem;
+        top: 0rem;
+    }
+}
